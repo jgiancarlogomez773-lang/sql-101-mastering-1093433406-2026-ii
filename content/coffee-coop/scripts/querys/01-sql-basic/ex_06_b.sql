@@ -6,10 +6,61 @@ SELECT
     T1.first_name AS first_name,
     T1.last_name AS last_name,
     T1.email AS email
-FROM farm.farmers AS T1
-WHERE T1.municipality_code = '54518'
-  AND T1.email IS NULL;
+FROM 
+    farm.farmers AS T1
+WHERE     
+    T1.municipality_code = '54518' AND 
+    T1.email IS NULL;
 
 /*
-PEGAR AQUI EL RESULTADO DEL CLIENTE SQL
+  document  |    first_name    |     last_name      | email
+------------+------------------+--------------------+-------
+ 712758473  | Wilson           | López Villamizar   |
+ 727945493  | Gloria           | Marín Rivera       |
+ 549054771  | María            | Burbano Duarte     |
+ 24999630   | Esperanza        | Romero Betancur    |
+ 914044314  | Ancízar Cristian | Polanía Delgado    |
+ 343256743  | Dora             | Hernández Correa   |
+ 1148351420 | Inés             | Jiménez Jaimes     |
+ 1117597835 | Cecilia Lorena   | Díaz García        |
+ 749444168  | Emilio           | Delgado Molina     |
+ 940051048  | David Germán     | Romero Bonilla     |
+ 548464915  | Yuliana          | Rodríguez Vargas   |
+ 554620706  | Nelson Samuel    | Mejía Vera         |
+ 59388780   | Juan             | Ortega Zapata      |
+ 1171130241 | Elsa             | Mejía Vera         |
+ 824422301  | Hernando         | Montoya Agudelo    |
+ 21358854   | Manuela Yolanda  | Benavides Delgado  |
+ 1185523747 | Elsa             | Ibarra Molina      |
+ 131166207  | Jaime            | Marín Hernández    |
+ 35147265   | Carlos           | Gutiérrez Pabón    |
+ 712500733  | Esperanza        | Valencia Ortiz     |
+ 922724022  | Esteban          | Salazar Parra      |
+ 1135293825 | Abelardo         | Pérez Castro       |
+ 939635303  | Marleny          | Álvarez Correa     |
+ 549847293  | Wilmer           | Pérez Chamorro     |
+ 1189704117 | Mariana          | Ortiz Ruiz         |
+ 599185252  | Efraín           | Pinzón Cabrera     |
+ 33787285   | Rubén            | Ramos Chamorro     |
+ 797017145  | Isabella         | Barrera Cabrera    |
+ 723123018  | Diego            | Niño Hernández     |
+ 446019320  | Fernando         | Rojas Cárdenas     |
+ 525766302  | Gustavo          | Ibarra Agudelo     |
+ 1001674689 | Jaime Santiago   | Cuéllar Cáceres    |
+ 232229735  | Libardo          | Lasso Serrano      |
+ 1090968710 | Ruth             | Rodríguez Pérez    |
+ 483692716  | Ramiro           | Barrera Villamizar |
+ 966970818  | Gustavo          | Parra Ortiz        |
+ 550696749  | Viviana          | Arias Ramírez      |
+ 846209158  | Daniel Héctor    | Duque Ruiz         |
+ 754524782  | Diana            | Lozano Rincón      |
+ 914235490  | Óscar            | Ospina González    |
+ 932437698  | Amparo           | Duarte Duque       |
+ 283636187  | Gustavo          | Moreno López       |
+ 449792023  | Myriam           | Sandoval Osorio    |
+ 737383707  | Yesenia          | Bermúdez Henao     |
+ 302223305  | Camilo           | Arias Mora         |
+ 641839251  | Efraín           | Ortega Correa      |
+ 273193028  | Erika            | Ríos Suárez        |
+ 860920785  | Hugo             | Jiménez Parra      |
 */
